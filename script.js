@@ -1,36 +1,11 @@
-let lang = prompt('"en" or "ru"');
-let namePerson = prompt('Введите имя:');
+let anyText = prompt('Введите строку');
 
-let arrWeekRu = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресение'];
-let arrWeekEn = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+hiddingString(anyText);
 
-let arrWeeks = {
-    ru: arrWeekRu,
-    en: arrWeekEn 
-};
-
-if (lang === 'en') {
-    console.log(arrWeekEn);
-} else if (lang === 'ru') {
-    console.log(arrWeekRu);
-} else {
-    console.log('Что то пошло не так!');
+function hiddingString(text){
+    if (typeof text !== 'string'){
+        alert('Это не строка!');
+    } else {
+        console.log(text.trim().substr(0,30)+'...');
+    }
 }
-
-switch (lang) {
-    case 'ru':
-        console.log(arrWeekRu);
-        break;
-    case 'en':
-        console.log(arrWeekEn);
-        break;
-    default:
-        console.log('Что то пошло не так!');
-}
-
-console.log(arrWeeks[lang]);
-
-console.log((namePerson === 'Артем') ? "Директор":
-            (namePerson === 'Максим') ? "Преподаватель":
-            "Студент");
-

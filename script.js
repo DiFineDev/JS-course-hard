@@ -1,5 +1,6 @@
 let arr = ['123450', '234900', '4329788', '234234432', '543345645', '54887298', '1234515341'];
 let arr1 = [];
+let n = 100;
 
 for (let i = 0; i < arr.length; i++) {
 
@@ -10,10 +11,6 @@ for (let i = 0; i < arr.length; i++) {
 
     }
 }
-console.log(arr1);
-
-
-let n = 100;
 
 for (let i = 1; i <= n; i++) {
 
@@ -41,5 +38,6 @@ for (let i = 1; i <= n; i++) {
     }
 
 }
+console.log(arr1);
 
 

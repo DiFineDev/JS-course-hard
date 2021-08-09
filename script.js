@@ -59,11 +59,12 @@ function checkNumber (number) {
     }
 }   
 
-
-
-setInterval(function dateShow () {
+function dateShow () {
     getNewData(); 
     element.innerHTML = 
     'Сегодня ' + fweek[day] + ', ' + date + ' ' + fMonth[month] + ' ' + year + ' года, ' + checkHour(hour) + checkMinute(minute) + checkSecond(second) + '<br>' + checkNumber(date) + '.' + checkNumber(month) + '.' + year + ' - ' + checkNumber(hour) + ':' + checkNumber(minute) + ':' + checkNumber(second);
-    }, 1000);
+}
 
+
+
+setInterval(dateShow, 1000);

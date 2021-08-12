@@ -1,0 +1,27 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: 14px;
+  letter-spacing: .3em;
+  font-family: 'Montserrat', sans-serif;
+}
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 200px;
+    text-align: center;
+    color: rgb(39, 36, 36);
+}
+
+#change {
+    border: none;
+    color: #232323;
+    background: transparent;
+    border: 1px solid #232323;
+    position: relative;
+    padding: 17px 34px 17px 39px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
